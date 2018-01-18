@@ -1,0 +1,395 @@
+﻿<html>
+	<head>
+		<title>Dungpanestokey</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+/*SLIDER*/
+.slider {
+	padding-top: none;
+	width: 100%;
+	margin: 2em auto;
+	
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+
+a{
+	color:black;text-decoration:none;
+
+}
+a:hover{
+	color:#848484;text-decoration:none;
+
+
+
+}
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#navbar a:hover:not(.active){
+	background-color: #111;
+}
+.active{
+	background-color: #ffd41d;
+	color: black;
+}
+
+ul {
+	
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li{
+	float: right;
+
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active){
+	background-color: #111;
+}
+.active{
+	background-color: #ffd41d;
+	color: black;
+}
+
+.menu {
+  float:left;
+  width:20%;
+  font-family:verdana;
+  text-align:center;
+}
+.menuitem {
+  background-color:#ffd41d;
+  padding:8px;
+  margin-top:7px;
+  
+}
+a{
+	color:black;text-decoration:none;
+
+}
+a:hover{
+	color:#848484;text-decoration:none;
+
+
+
+}
+
+.button {
+    background-color: #f84b47; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button2 {
+    background-color: #f84b47; 
+    color: black; 
+    border: none;
+    border-radius: 25px;
+}
+
+.button2:hover {
+    background-color: #fa6764;
+    color: white;
+    border-radius: 25px;
+}
+
+
+.main {
+  background-color: #fafafa;
+  float:left;
+  width:100%;
+  padding:20 0px;
+  font-family:verdana;
+}
+.galeri{
+  background-color: #fafafa;
+  margin-top: 10px;
+  float:left;
+  width:100 %;
+  padding:20 200px;
+  font-family:verdana;
+
+}
+
+.img-responsive{
+	display:block;
+	max-width:100%;
+	height:auto
+}
+
+/* Bagian Image */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+	</head>
+
+	<body background-color="#cfcfcf">
+		<font color="#4c4c4c">
+
+
+		<div style="background-color:#ffd41d;padding:1px;text-align:left;">
+			<a href="index.html"><h3 style="font-family:verdana; margin-left:20px;color:#ffffff">DUNGPANESTOKEY </h3></a>
+
+		</div>
+		<ul>
+			<li><a href="tentang.html">TENTANG KAMI</a></li>
+			<li><a href="produk.html">PRODUK</a></li>
+			<li><a class="active" href="index.html">HOME</a></li>
+
+		</ul>
+		<div id= "navbar">
+			<li><a href="tentang.html">TENTANG KAMI</a></li>
+			<li><a href="produk.html">PRODUK</a></li>
+			<li><a class="active" href="index.html">HOME</a></li>
+
+		</div>
+		
+		<br>
+
+
+		<div class="main">
+			<h2 align="center">Apa yang Anda cari hari ini ?</h2>
+			<div>
+
+			<table width=100%>
+  				<tr>
+    				<td width="20%"  align="center"></td>
+   					<td width="20%"  align="center"><a href="synthesizer.html"><img src="images/produk1.jpg" alt="penyimpanan" class="img-responsive"></a></td>
+				    <td width="20%"  align="center"><a href="keyboard.html"><img src="images/produk2.jpg" alt="mejakursi" class="img-responsive"></a></td>
+					<td width="20%"  align="center"><a href="piano.html"><img src="images/produk3.png" alt="tempattidur" class="img-responsive"></a></td>
+					<td width="20%"  align="center"></td>
+ 				 </tr>
+ 				 <tr>
+				    <td width="20%" height="66" align="center"></td>
+				    <td width="20%" height="66" align="center"><a href="synthesizer.html">Synthesizer</a></td>
+				    <td width="20%" height="66" align="center"><a href="mejakursi.html">Keyboard</a></td>
+					<td width="20%" height="66" align="center"><a href="bed.html">Piano</a></td>
+					<td width="20%" height="66" align="center"></td>
+ 				 </tr>
+
+			</table>
+		</div>
+
+					<br>
+					<br>
+			
+<div class="galeri">
+	
+ 			<h3 style="text-align:center">Banyak pilihan, tapi selalu ada satu yang tepat menarik hati</h2>
+ 			<p style="text-align:center">Berlokasi di Semarang, DUNGPANESTOKEY hadir untuk selangkah lebih dekat dengan kalian.
+			Manjakan kenyamanan telinga anda dan pendengar musik anda dengan pembelian keyboard yang tepat di tempat kami.
+			Dengan banyak pilihan keyboard anda akan dimudahkan dalam memilih Keyboard yang sesuai dengan gaya bermain anda
+			</p>
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/ban1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/ban2.jpg"  style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/ban3.jpg"  style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/ban4.jpg"  style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/ban5.jpg"  style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/ban6.jpg"  style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/ban1.jpg"  style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ban2.jpg"  style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ban3.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ban4.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+ 		
+			
+
+
+			
+
+	
+		</div>
+		<div style="background-color:#ffd41d;text-align:center;padding:10px;margin-top:7px;">
+			<table width=100%>
+				<tr>
+					<td width="350px" height="66px">
+						<img src="images/home2.jpg" alt="sofa" class="img-responsive">
+					</td>
+					<td width="350px" height="66px">
+						<img src="images/footer.jpg" alt="sofa" class="img-responsive">
+						</td>
+			</table>
+		</div>
+	</font>
+	</body>
+
+
+
+</html>
